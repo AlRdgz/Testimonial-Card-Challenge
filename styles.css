@@ -1,0 +1,170 @@
+html{
+    padding : 15px;
+    background-color: hsl(0, 0%, 91%);
+}
+
+.container1{
+    /* width: 360px;
+    height: 2230px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Barlow Semi Condensed';
+    margin: 0 auto;
+}
+
+#sub-container-top, #sub-container-bottom, #sub-container-desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+.topName{
+    display: flex;
+}
+
+.img{
+    border:  3px solid rgba(193, 185, 206, 0.69); ;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+    
+.nameProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    }
+
+.first{
+    margin-top: 7px !important;
+    opacity: 1 !important;
+}
+
+.nameProfile p {
+    margin:0;
+    margin-left: 14px;
+}
+
+#Daniel h4,  #Daniel p, #Daniel h2, #Jonathan h4,  #Jonathan p, #Jonathan h2, #Patrick h4,  #Patrick p, #Patrick h2, #Jeanette h4,  #Jeanette p, #Jeanette h2, #Kira h4,  #Kira p, #Kira h2{ 
+    opacity: 0.6;
+}
+
+#Daniel h3, #Jonathan h3, #Jeanette h3, #Kira h3, #Patrick h3 {
+    font-size: 23px;
+}
+
+.container1 p, h2, h3 {
+    text-align: left;
+    z-index: 2;
+}
+
+#quotation-mark{
+    background-image: url(/testimonials-grid-section-main/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    width: 136px;
+    height: 136px;
+    background-size: cover;
+    position: absolute;
+    z-index:1;
+    opacity: 0.6;
+    top:0px;
+    right: 23px;
+}
+
+#Daniel, #Jonathan, #Jeanette, #Patrick, #Kira{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#Daniel, #Jonathan, #Patrick{
+    color: white;
+}
+
+#Daniel{
+    position: relative;
+    background-color: hsl(263, 55%, 52%);
+}
+
+#Patrick:hover, #Kira:hover, #Jeanette:hover, #Jonathan:hover, #Daniel:hover {
+    transform: scale(1.03 )
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+#Jonathan{
+    background-color: hsl(217, 19%, 35%);
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+#Jeanette{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%)
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+#Patrick{
+    background-color: hsl(219, 29%, 14%);
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+#Kira{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%)
+}
+
+
+@media all and (min-width:700px){
+    html{
+        padding: 50px;
+    }
+    
+    .container1, #sub-container-desktop, #sub-container-top,  #sub-container-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container1{
+        flex-direction: row;
+    } 
+
+    #Daniel p, #Jeanette p, #Patrick p, #Jonathan p, #Kira p{
+        font-size: 15px 
+    }  
+
+    #Daniel, #Patrick, #Jonathan, #Jeanette, #Kira {
+        margin-right: 20px;
+        padding-left: 35px;
+    }
+    
+    #Daniel, #Patrick{ 
+        flex-basis: 75%;
+    }
+    #Jonathan,#Jeanette{
+        flex-basis: 25%;
+    }
+    
+    #sub-container-top,  #sub-container-bottom{
+        flex-direction: row;
+        flex-basis: 50%;
+    }
+
+    #sub-container-desktop{
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    #Kira{
+        flex-basis: 20%;
+    }
+
+    #quotation-mark{
+        top:0px;
+        right: 70px;
+    }
+    
+    /* Para referir la posición de un div a otro div, puedes indicar como **relative** el div padre y como 
+    **absolute** el hijo para que este tomara referencia del primero. Posteriormente, para poder centrarlo 
+    respecto al padre podrás usar **left: 0** y **right: 0** que junto con **margin: 0 auto** harán que el div 
+    hijo se posicione en el centro del padre. */
+}
