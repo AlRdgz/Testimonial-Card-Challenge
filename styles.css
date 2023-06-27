@@ -63,7 +63,7 @@ html{
 }
 
 #quotation-mark{
-    background-image: url(./images/bg-pattern-quotation.svg);
+    /* background-image: url(./images/bg-pattern-quotation.svg); */
     width: 136px;
     height: 136px;
     background-size: cover;
